@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.covid{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.covid .heading{
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.covid .main {
+ padding: 10px 40px;
+ margin-bottom: 5px;
+}
+
+.main h2 span{
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+.main h2{
+  color: white;
+  font-weight: 500;
+}
+.live1{
+  width: 100px;
+  height: 100px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live{
+  font-size: 2rem;
+  animation: live 3s linear  infinite ;
+}
+
+@keyframes live {
+  0%{
+    font-size: 5px;
+  }
+  25%{
+    font-size: 10px;
+  }
+  50%{
+    font-size: 15px;
+  }
+  75%{
+    font-size: 20px;
+  }
+  100%{
+    font-size: 25px;
+  }
+  
+}
+
+.hed{
+  color: white;
+  font-weight: 900;
+  text-shadow: 7px 3px 8px rgba(0,0,0,0.66);
+  font-size: 3rem;
+}
+#six{
+  background-color: #CD113B;
+}
+#five{
+  background-color: #CE49BF;
+}
+#four{
+  background-color: #FD5D5D;
+}
+#three{
+  background-color: #F900BF;
+}
+#two{
+  background-color: #270082;
+}
+#on{
+  background-color: #8BDB81;
+}
+@media(max-width:990px){
+.hed{
+  font-size: 2rem;
+}
+}
+
+@media(max-width:767px){
+  .hed{
+    font-size: 1.4rem;
+  }
+  .main h2 {
+    font-size: 1.5rem;
+  }
+}
+@media(max-width:564px){
+  .live1{
+    width: 50px;
+    height: 50px;
+      }
+   
+      .live{
+        font-size: 4px;
+        margin-top: 80px;
+      }
+      .heading h1{
+        font-size: 20px;
+      }
+      @keyframes live{
+
+        0%{
+          font-size: 5px;
+        }
+        25%{
+          font-size: 10px;
+        }
+        50%{
+          font-size: 15px;
+        }
+        
+      }
+}
